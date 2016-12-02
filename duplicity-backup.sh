@@ -18,7 +18,7 @@ duplicity -v0\
  --full-if-older-than 30D\
  /var/tmp/ rsync://user:password@192.168.x.x::/backup/bdweb1/mysql
 
-rm /var/tmp/bandur.sql
+rm /var/tmp/backup.sql
 
 duplicity remove-all-but-n-full 2\
  --archive-dir /var/cache/duplicity\
